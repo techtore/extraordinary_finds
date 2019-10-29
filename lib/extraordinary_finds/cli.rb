@@ -5,9 +5,7 @@ class ExtraordinaryFinds::CLI
     puts "Today's Extraordinary Finds:"
     # list_finds
     # menu
-    
-    html = open("https://www.amazon.com/")
-    doc = Nokogiri::HTML(html)
+    doc = Nokogiri::HTML(open("https://www.amazon.com/"))
   end
   
 #   def list_finds
