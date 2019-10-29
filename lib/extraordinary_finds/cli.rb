@@ -1,3 +1,3 @@
-class ExtraFinds::CLI
+class ExtraordinaryFinds::CLI
   
 end

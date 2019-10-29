@@ -1,4 +1,4 @@
-class ExtraFinds::Finds
+class ExtraordinaryFinds::Finds
   attr_accessor: 
   
 end
