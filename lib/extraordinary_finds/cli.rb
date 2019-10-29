@@ -1,0 +1,3 @@
+class ExtraFinds::CLI
+  
+end
