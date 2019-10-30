@@ -17,8 +17,12 @@ class ExtraordinaryFinds::CLI
   end
   
   def menu
-    puts "Enter the number of the find you'd like more information for. Type print to see the list again, or exit."
-    #some code here to reposnd to user input
+    input = nil 
+    while input != "exit" 
+    puts "Enter the number of the find you'd like more information about. Type print to see the list again, or exit:"
+    
+    if input.to_i > 0 
+     product.name 
   end 
   
 # end
