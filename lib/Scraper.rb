@@ -19,5 +19,6 @@ class Scraper
     price = doc.css("div.style_price_2Zrre").text
     rating = doc.css("div.style_reviewAndBadgesWrapper_1gIZg").text
   end
+end
   
 end

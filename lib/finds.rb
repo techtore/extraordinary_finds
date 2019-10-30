@@ -1,4 +1,4 @@
-class ExtraordinaryFinds::Finds
+class Finds
   attr_accessor: :title, :price, :rating
   @@all = []
   
