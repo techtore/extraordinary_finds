@@ -2,11 +2,14 @@
 
 require "bundler/setup"
 require "extraordinary_finds"
-require_relative "../lib/cli"
-require_relative "../lib/finds"
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
+
+require_relative "../lib/cli"
+require_relative "../lib/finds"
+require_relative "../lib/scraper"
+
 
 ExtraordinaryFinds::CLI.new.call
 
