@@ -12,12 +12,12 @@ class Scraper
     end
   end
   
-  def self.scrape_finds_info(find)
+  def self.scrape_finds_info(product)
     doc = Nokogiri::HTML(open("https://www.amazon.com/stores/page/A9853324-FB0C-42D1-A0FF-D25F69A0FAEA?pf_rd_p=4e8f08b2-3aad-4e0a-9552-11f30b6909e0&pf_rd_r=5YS3M8FC89JZ198NRXZ8"))
-    
+    doc.css("div.sstyle_itemInfo_3C9wg")[0].each do |info|
 
-    price= doc.css("div.style_price_2Zrre").text
-    review = doc.css("div.style_reviewAndBadgesWrapper_1gIZg").text
+    price = doc.css("div.style_price_2Zrre").text
+    rating = doc.css("div.style_reviewAndBadgesWrapper_1gIZg").text
   end
   
 end
