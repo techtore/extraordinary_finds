@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "extraordinary_finds/version"
+require "extraordinary_finds/lib/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "extraordinary_finds"
