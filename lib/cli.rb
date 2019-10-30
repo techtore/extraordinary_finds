@@ -19,10 +19,15 @@ class ExtraordinaryFinds::CLI
   def menu
     input = nil 
     while input != "exit" 
-    puts "Enter the number of the find you'd like more information about. Type print to see the list again, or exit:"
+      puts "Enter the number of the find you'd like more information about. Type print to see the list again, or exit:"
     
     if input.to_i > 0 
-     product.name 
-  end 
+      # product.name
+    elsif input == "print"
+      print_finds
+    else
+      puts "Not sure what you want, type print or exit."
+    end 
+  end
   
 # end
